@@ -24,4 +24,4 @@ const onCloseBtnClick = (e) => {
 }
 
 btnModalOpen.addEventListener('click', onModalOpenC);
-btnModalClose.addEventListener('click', onCloseBtnClick)
+btnModalClose.addEventListener('click', onCloseBtnClick);
