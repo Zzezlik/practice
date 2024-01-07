@@ -3,6 +3,7 @@ const btnModalClose = document.querySelector('.js-modal-close');
 const backdrop = document.querySelector('.js-backdrop');
 const nameI = document.querySelector('.js-nameI');
 const passI = document.querySelector('js-passI');
+const 
 
 const onModalOpenC = (e) => {
     e.preventDefault();
@@ -21,7 +22,6 @@ const onBackdropClick = (e) => {
 }
 
 const onCloseBtnClick = (e) => {
-
     backdrop.classList.remove('is-open')
 }
 
