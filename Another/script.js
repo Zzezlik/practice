@@ -1,13 +1,13 @@
-const msgList = document.querySelector('ul');
+const msgList = document.querySelector("ul");
 
 const onCloseBtn = (e) => {
-    const { target } = e;
+  const { target } = e;
 
-    if (target.nodeName !== 'BUTTON' && target.tagName !== 'BUTTON') return
+  if (target.nodeName !== "BUTTON" && target.tagName !== "BUTTON") return;
 
-    const msg = target.closest('li');
-    console.dir(msg);
-    msg.remove();
-}
+  const msg = target.closest("li");
+  console.dir(msg);
+  msg.remove();
+};
 
-msgList.addEventListener('click', onCloseBtn)
+msgList.addEventListener("click", onCloseBtn);
