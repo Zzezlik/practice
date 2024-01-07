@@ -8,6 +8,7 @@ const onModalOpenC = (e) => {
     e.preventDefault();
     backdrop.classList.add('is-open');
     backdrop.addEventListener('click', onBackdropClick);
+    document.addEventListener('keydown', onEscClick)
 };
 
 const onBackdropClick = (e) => {
@@ -15,12 +16,19 @@ const onBackdropClick = (e) => {
     if (target === currentTarget) {
         backdrop.classList.remove('is-open');
         backdrop.removeEventListener('click', onBackdropClick);
+        document.removeEventListener('click', onEscClick)
     }
 }
 
 const onCloseBtnClick = (e) => {
-    e.preventDefault();
+
     backdrop.classList.remove('is-open')
+}
+
+const onEscClick = (e) => {
+    if (e.key === 'Escape' || e.code === 'Escape') {
+        onCloseBtnClick();
+    }
 }
 
 btnModalOpen.addEventListener('click', onModalOpenC);
