@@ -49,7 +49,6 @@ const onSubmitClick = (e) => {
     const onDeleteClick = (e) => {
       e.preventDefault();
       const { target } = e;
-      console.dir(target.closest("li").outerHTML);
       const msga = target.closest("li");
       msga.remove();
     };
