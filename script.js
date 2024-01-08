@@ -40,8 +40,10 @@ const onSubmitClick = (e) => {
   if (nameI.value.trim() === "" && passI.value === "") {
     const msgEl = document.createElement("li");
     const msgBtn = document.createElement("button");
+
     msgEl.classList.add("message");
     msgBtn.classList.add("message__close-btn");
+
     msgEl.textContent = "Error";
     msgBtn.textContent = "x";
     form.insertAdjacentElement("beforeend", msgEl);
@@ -54,6 +56,15 @@ const onSubmitClick = (e) => {
     };
     msgBtn.addEventListener("click", onDeleteClick);
   } else {
+    const msgEl = document.createElement("li");
+    const msgBtn = document.createElement("button");
+
+    msgEl.classList.add("message");
+    msgBtn.classList.add("message__close-btn");
+    msgEl.textContent = `Name: ${nameI.value} Password: ${passI.value}`;
+
+    form.insertAdjacentElement("beforeend", msgEl);
+    msgEl.insertAdjacentElement("beforeend", msgBtn);
   }
 };
 
