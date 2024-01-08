@@ -37,27 +37,21 @@ const onEscClick = (e) => {
 
 const onSubmitClick = (e) => {
   e.preventDefault();
-  if (nameI.value.trim() !== "" && passI.value !== "") {
-    console.log(`Name: ${nameI.value}\nPassword: ${passI.value}`);
-  } else {
-    const msgc = `<li class="message js-message">
-        <a>
-          <h3>error</h3>
-          <p>
-            description
-          </p>
-          <div>
-            <button type="button" class="message__close-btn">[x]</button>
-          </div>
-        </a>
-      </li>`;
-    msgj.insertAdjacentHTML("beforeend", msgc);
-    const onMsgClose = (e) => {
-      if (e.tagName !== "BUTTON") return;
-      const msgCl = target.closest("li");
-      console.dir(msgCl);
+  if (nameI.value.trim() === "" && passI.value === "") {
+    const msgEl = document.createElement("li");
+    const msgBtn = document.createElement("button");
+    msgBtn.textContent = "delete";
+    msgEl.textContent = `Error  `;
+    form.insertAdjacentElement("beforeend", msgEl);
+    msgEl.insertAdjacentElement("beforeend", msgBtn);
+    const onDeleteClick = (e) => {
+      e.preventDefault();
+      const { target } = e;
+      console.dir(target.closest("li").outerHTML);
+      const msga = target.closest("li");
+      msga.remove();
     };
-    msgj.addEventListener("click", onMsgClose);
+    msgBtn.addEventListener("click", onDeleteClick);
   }
 };
 
