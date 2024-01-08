@@ -40,8 +40,10 @@ const onSubmitClick = (e) => {
   if (nameI.value.trim() === "" && passI.value === "") {
     const msgEl = document.createElement("li");
     const msgBtn = document.createElement("button");
-    msgBtn.textContent = "delete";
-    msgEl.textContent = `Error  `;
+    msgBtn.textContent = "x";
+    msgEl.textContent = `Error`;
+    msgEl.classList.add("message");
+    msgBtn.classList.add("message__close-btn");
     form.insertAdjacentElement("beforeend", msgEl);
     msgEl.insertAdjacentElement("beforeend", msgBtn);
     const onDeleteClick = (e) => {
