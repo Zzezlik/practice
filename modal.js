@@ -19,14 +19,15 @@ const onModalOpenC = (e) => {
 const onBackdropClick = (e) => {
   const { target, currentTarget } = e;
   if (target === currentTarget) {
-    backdrop.classList.remove("is-open");
-    backdrop.removeEventListener("click", onBackdropClick);
-    document.removeEventListener("click", onEscClick);
+    onCloseBtnClick();
   }
 };
 
-const onCloseBtnClick = (e) => {
+const onCloseBtnClick = () => {
   backdrop.classList.remove("is-open");
+  backdrop.removeEventListener("click", onBackdropClick);
+  document.removeEventListener("keydown", onEscClick);
+  submit.removeEventListener("click", onSubmitClick);
 };
 
 const onEscClick = (e) => {
