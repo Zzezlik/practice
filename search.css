@@ -1,0 +1,11 @@
+.js-search {
+  border-radius: 8px;
+  width: 140px;
+  height: 20px;
+  text-align: center;
+  border-style: solid;
+}
+
+.hidden {
+  display: none;
+}

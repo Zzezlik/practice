@@ -14,6 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./search.css" />
   </head>
 
   <body>
@@ -22,16 +23,25 @@
       <div class="modal">
         <button type="button" class="close-btn js-modal-close">X</button>
         <form class="form" action="">
-          <label for="">Name</label>
+          <label for="">Product Name</label>
           <input class="js-nameI" type="text" />
-          <label for="">password</label>
+          <label for="">Password</label>
           <input class="js-passI" type="password" />
           <button class="js-submit" type="submit">Submit</button>
           <ul class="js-message-list"></ul>
         </form>
       </div>
     </div>
-
+    <form class="search">
+      <input class="js-search" type="search" placeholder="Search" />
+    </form>
+    <ul class="js-items">
+      <li class="item">apple</li>
+      <li class="item">banana</li>
+      <li class="item">orange</li>
+      <li class="item">peach</li>
+      <li class="item">grape</li>
+    </ul>
     <script type="module" src="./modal.js"></script>
     <script type="module" src="./search.js"></script>
   </body>
