@@ -19,7 +19,11 @@
   </head>
 
   <body>
-    <button type="button" class="js-modal-open">Open modal</button>
+    <h1>Мандарин</h1>
+
+    <button type="button" class="modal-open js-modal-open">
+      <img class="js-image" src="img/js.png" />
+    </button>
     <div class="backdrop js-backdrop">
       <div class="modal">
         <button type="button" class="close-btn js-modal-close">X</button>
@@ -34,13 +38,17 @@
       </div>
     </div>
 
+    <button class="home js-home">home</button>
+    <button class="home js-home">home</button>
+    <button class="home js-home">home</button>
+
     <div class="counter">
       <button class="js-increment">+</button>
       <span class="count">0</span>
       <button class="js-decrement">-</button>
-    <form class="search">
-      <input class="js-search" type="search" placeholder="Search" />
-    </form>
+    </div>
+
+    <input class="js-search" type="search" placeholder="Search" />
     <ul class="js-items">
       <li class="item">apple</li>
       <li class="item">banana</li>
@@ -48,14 +56,11 @@
       <li class="item">peach</li>
       <li class="item">grape</li>
     </ul>
-    <header class="js-header header">
-      <button class="home js-home">home</button>
-      <button class="home js-home">home</button>
-      <button class="home js-home">home</button>
-    </header>
 
-    <script type="module" src="./js/counter.js"></script>
-    <script type="module" src="./js/modal.js"></script>
-    <script type="module" src="./js/search.js"></script>
+    <form class="search">
+      <script type="module" src="./js/counter.js"></script>
+      <script type="module" src="./js/modal.js"></script>
+      <script type="module" src="./js/search.js"></script>
+    </form>
   </body>
 </html>

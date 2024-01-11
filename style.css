@@ -24,8 +24,8 @@
   display: block;
   width: 24px;
   height: 24px;
-  top: 0;
-  right: 10px;
+  bottom: 20px;
+  right: -3px;
   border: none;
   background: transparent;
   color: darkred;

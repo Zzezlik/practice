@@ -20,3 +20,15 @@ header {
   position: relative;
   z-index: 1;
 }
+
+.js-image {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-open {
+  background-color: gold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}

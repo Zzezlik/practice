@@ -36,6 +36,13 @@ const onEscClick = (e) => {
   }
 };
 
+const onDeleteClick = (e) => {
+  e.preventDefault();
+  const { target } = e;
+  const msga = target.closest("li");
+  msga.remove();
+};
+
 const onSubmitClick = (e) => {
   e.preventDefault();
   if (nameI.value.trim() === "" && passI.value === "") {
@@ -49,12 +56,7 @@ const onSubmitClick = (e) => {
     msgBtn.textContent = "x";
     form.insertAdjacentElement("beforeend", msgEl);
     msgEl.insertAdjacentElement("beforeend", msgBtn);
-    const onDeleteClick = (e) => {
-      e.preventDefault();
-      const { target } = e;
-      const msga = target.closest("li");
-      msga.remove();
-    };
+
     msgBtn.addEventListener("click", onDeleteClick);
   } else {
     const msgEl = document.createElement("li");
@@ -62,7 +64,10 @@ const onSubmitClick = (e) => {
 
     msgEl.classList.add("message");
     msgBtn.classList.add("message__close-btn");
-    msgEl.textContent = `Name: ${nameI.value} Password: ${passI.value}`;
+    msgEl.textContent = `Name: ${nameI.value}Password: ${passI.value}`;
+
+    msgBtn.textContent = "x";
+    msgBtn.addEventListener("click", onDeleteClick);
 
     form.insertAdjacentElement("beforeend", msgEl);
     msgEl.insertAdjacentElement("beforeend", msgBtn);
