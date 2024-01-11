@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./search.css" />
+    <link rel="stylesheet" href="./header.css" />
   </head>
 
   <body>
@@ -23,7 +24,7 @@
       <div class="modal">
         <button type="button" class="close-btn js-modal-close">X</button>
         <form class="form" action="">
-          <label for="">Product Name</label>
+          <label for="">Name</label>
           <input class="js-nameI" type="text" />
           <label for="">Password</label>
           <input class="js-passI" type="password" />
@@ -32,6 +33,11 @@
         </form>
       </div>
     </div>
+
+    <div class="counter">
+      <button class="js-increment">+</button>
+      <span class="count">0</span>
+      <button class="js-decrement">-</button>
     <form class="search">
       <input class="js-search" type="search" placeholder="Search" />
     </form>
@@ -42,7 +48,14 @@
       <li class="item">peach</li>
       <li class="item">grape</li>
     </ul>
-    <script type="module" src="./modal.js"></script>
-    <script type="module" src="./search.js"></script>
+    <header class="js-header header">
+      <button class="home js-home">home</button>
+      <button class="home js-home">home</button>
+      <button class="home js-home">home</button>
+    </header>
+
+    <script type="module" src="./js/counter.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/search.js"></script>
   </body>
 </html>

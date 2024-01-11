@@ -6,6 +6,12 @@
   border-style: solid;
 }
 
+li {
+  color: black;
+  transition: color 500ms linear;
+}
+
 .hidden {
-  display: none;
+  display: inline;
+  color: white;
 }
