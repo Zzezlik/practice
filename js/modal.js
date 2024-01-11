@@ -45,7 +45,7 @@ const onDeleteClick = (e) => {
 
 const onSubmitClick = (e) => {
   e.preventDefault();
-  if (nameI.value.trim() === "" && passI.value === "") {
+  if (nameI.value.trim() === "" || passI.value === "") {
     const msgEl = document.createElement("li");
     const msgBtn = document.createElement("button");
 
@@ -64,7 +64,7 @@ const onSubmitClick = (e) => {
 
     msgEl.classList.add("message");
     msgBtn.classList.add("message__close-btn");
-    msgEl.textContent = `Name: ${nameI.value}Password: ${passI.value}`;
+    msgEl.textContent = `Name: ${nameI.value} Password: ${passI.value}`;
 
     msgBtn.textContent = "x";
     msgBtn.addEventListener("click", onDeleteClick);
