@@ -82,3 +82,27 @@ input {
   margin: 10px 0;
   display: block;
 }
+
+.calendar {
+  font-size: 20px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar td {
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+
+.active,
+.calendar td:not(.void):hover {
+  background-color: grey;
+  color: #ffffff;
+}

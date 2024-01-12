@@ -17,9 +17,7 @@ const inputChange = (e) => {
     if (item[i].textContent.includes(e.target.value)) {
       // console.dir(e.target.value);
       item[i].classList.remove("hidden");
-    } else {
-      item[i].classList.add("hidden");
-    }
+    } else item[i].classList.add("hidden");
   }
 };
 
