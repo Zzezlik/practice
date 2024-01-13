@@ -3,8 +3,6 @@ let prevTdEl = null;
 
 const onCalendarClick = (e) => {
   const { target, currentTarget } = e;
-  console.log(`target: ${target}`);
-  console.log(`currentTarget: ${currentTarget}`);
 
   if (target.textContent === "" || target.tagName !== "TD") {
     return;
