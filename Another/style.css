@@ -1,20 +1,65 @@
 .message {
-    background: #edf5e1;
-    padding: 10px 20px 10px;
-    border-top: solid 2px #c4df9b;
-    position: relative;
-  }
-  
-  .message__close-btn {
-    position: absolute;
-    display: block;
-    width: 24px;
-    height: 24px;
-    top: 0;
-    right: 10px;
-    border: none;
-    background: transparent;
-    color: darkred;
-    padding: 0;
-    cursor: pointer;
-  }
+  background: #edf5e1;
+  padding: 10px 20px 10px;
+  border-top: solid 2px #c4df9b;
+  position: relative;
+}
+
+.message__close-btn {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: darkred;
+  padding: 0;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.center li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.center a {
+  text-decoration: none;
+  color: #000;
+}
+
+.center button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c4df9b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nameh1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
