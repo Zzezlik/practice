@@ -16,6 +16,7 @@ for (let i = 0; i < fruits.length; i++) {
 const onInput = (e) => {
   const { target } = e;
   const searchText = target.value.toLowerCase();
+
   const filteredItems = fruits.filter((fruit) =>
     fruit.toLowerCase().includes(searchText)
   );
