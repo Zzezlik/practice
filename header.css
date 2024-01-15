@@ -1,0 +1,27 @@
+.home {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 3vh;
+  width: 7vh;
+  position: relative;
+  border-radius: 1vh;
+  z-index: 1;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 10vh;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.js-image {
+  width: 20px;
+  height: 20px;
+}

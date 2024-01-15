@@ -1,0 +1,109 @@
+.message {
+  background: #edf5e1;
+  padding: 10px 20px 10px;
+  border-top: solid 2px #c4df9b;
+  position: relative;
+}
+
+.message__close-btn {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  border: none;
+  background: transparent;
+  color: darkred;
+  padding: 0;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.center li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.center a {
+  text-decoration: none;
+  color: #000;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.center span {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.center button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(255, 222, 54);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.aco button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  background-color: rgb(255, 222, 54);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.aco button:hover {
+  background-color: rgb(255, 210, 54);
+}
+.aco button:active {
+  background-color: #ffe790;
+}
+.center button:hover {
+  background-color: rgb(255, 210, 54);
+}
+.center button:active {
+  background-color: #ffe790;
+}
+
+.nameh1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.center input {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #c4df9b;
+  border-radius: 6px;
+  width: 50%;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+}

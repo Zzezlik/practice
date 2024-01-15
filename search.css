@@ -1,0 +1,11 @@
+.js-search {
+  border-radius: 6px;
+  width: 140px;
+  height: 20px;
+  background-color: #eaeaea;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
