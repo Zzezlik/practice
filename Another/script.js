@@ -13,6 +13,13 @@ for (let i = 0; i < fruits.length; i++) {
 
 // ----------------------------------------------
 
+const head = document.querySelector("head");
+console.dir(head);
+for (let i = 0; i < head.children.length; i++) {
+  console.dir(head.children[i]);
+  console.dir(head.children[i].outerHTML);
+}
+
 const onInput = (e) => {
   const { target } = e;
   const searchText = target.value.toLowerCase();
