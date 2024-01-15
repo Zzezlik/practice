@@ -25,10 +25,3 @@ header {
   width: 20px;
   height: 20px;
 }
-
-.modal-open {
-  background-color: gold;
-  border-radius: 40%;
-  width: 30px;
-  height: 30px;
-}
